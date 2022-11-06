@@ -1,0 +1,20 @@
+.appointment__wrap {
+  margin-bottom: 60px;
+}
+
+.appointment__title {
+  margin-bottom: 20px;
+}
+
+.appointment__description {
+  margin-bottom: 40px;
+}
+
+.appointment__form {
+  @include above ($desktop-width) {
+    display: flex;
+    gap: 60px;
+  }
+}
+
+

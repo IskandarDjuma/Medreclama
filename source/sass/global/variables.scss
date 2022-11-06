@@ -1,0 +1,26 @@
+// Fonts
+$primary-text: "Commissioner", "Arial", sans-serif;
+
+// Color
+$basic-blue: #0051d4;
+$basic-black: #000000;
+$basic-white: #ffffff;
+$basic-grey: #f2f2f2;
+$basic-grey100: #edeff2;
+$basic-grey200: #f6f6f6;
+$transparent: rgba($basic-black, 0);
+
+$accent-color: $basic-blue;
+$primary-text-color: $basic-black;
+
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
+
+//Retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

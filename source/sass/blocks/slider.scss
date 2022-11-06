@@ -1,0 +1,40 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.slider__btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  cursor: pointer;
+
+  &--prev {
+    left: 5%;
+  }
+
+  &--next {
+    right: 5%;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:focus {
+    opacity: 0.5;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $accent-color;
+    border-radius: 50%;
+  }
+}

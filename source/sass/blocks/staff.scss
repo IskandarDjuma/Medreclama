@@ -1,0 +1,62 @@
+.staff {
+  margin-bottom: 50px;
+
+  @include above ($tablet-width){
+    margin-bottom: 80px;
+  }
+}
+
+.staff__list {
+  @include list-reset;
+}
+
+.staff__item {
+  width: 100%;
+  margin-right: 10px;
+  flex: 1 0 auto;
+
+  img {
+    max-width: 100%;
+  }
+
+  @include above ($tablet-width) {
+    flex: 1 1 auto;
+  }
+
+  @include above ($desktop-width) {
+    flex: 0 1 auto;
+    width: 400px;
+  }
+}
+
+.staff__title {
+  margin-bottom: 40px;
+}
+
+.staff__figure {
+  margin: 0;
+
+  figcaption {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+.staff__img-wrap {
+  display: block;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 14.5rem;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  background-color: $basic-grey;
+}
+
+.staff__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform .25s;
+}
