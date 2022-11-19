@@ -1,5 +1,15 @@
+.appointment {
+  @include above ($max-desktop-width) {
+    flex: 1 2 auto;
+  }
+}
+
 .appointment__wrap {
   margin-bottom: 60px;
+
+  @include above ($max-desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .appointment__title {

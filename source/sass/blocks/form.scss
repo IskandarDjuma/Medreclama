@@ -7,9 +7,6 @@
   margin-bottom: 30px;
 
  @include above ($desktop-width) {
-    max-width: 800px;
-    width: 850px;
-    padding: 35px;
     flex: 1 0 auto;
   }
 }

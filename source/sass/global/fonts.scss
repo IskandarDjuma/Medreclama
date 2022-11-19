@@ -21,7 +21,22 @@
   font-weight: 600;
   font-style: normal;
   src: url("../fonts/Commissioner-SemiBold.woff2") format("woff2"),
-    url("../fonts/Commissioner-SemiBold.woff2") format("woff");
+    url("../fonts/Commissioner-SemiBold.woff") format("woff");
   font-display: swap;
 }
+
+
+// Roboto
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"),
+    url("../fonts/Commissioner-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+
+
 

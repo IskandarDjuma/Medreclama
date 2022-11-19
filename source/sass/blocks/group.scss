@@ -1,0 +1,21 @@
+.group {
+  @include above ($desktop-width) {
+    flex: 1 0 auto;
+  }
+
+  @include above ($desktop-width) {
+    flex: 1 1 auto;
+  }
+}
+
+.group__rev-price {
+  margin-bottom: 70px;
+}
+
+.group__staff {
+  margin-bottom: 70px;
+
+  @include above ($desktop-width) {
+    flex: 1 0 auto;
+  }
+}

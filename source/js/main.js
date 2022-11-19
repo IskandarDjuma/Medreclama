@@ -74,7 +74,7 @@ const phoneInputs = document.querySelectorAll('input[data-tel-input]');
         spaceBetween: 20
       },
 
-      1024: {
+      992: {
         slidesPerView: 4,
         spaceBetween: 20
       },

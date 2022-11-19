@@ -1,0 +1,39 @@
+.program__list {
+  @include list-reset;
+  margin-left: 40px;
+
+  li {
+    @include font-size (18px, 1.5em, 400);
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      left: 0;
+      background: url("../img/icon/yoga-icon.svg") no-repeat;
+    }
+  }
+
+  @include above ($tablet-width) {
+    @include font-size (21px, 1.5em, 400);
+  }
+}
+
+.program__title {
+  @include font-size(28px, 1.5em, 500);
+}
+
+.program__teacher {
+  @include font-size(18px, 1.5em, 400);
+
+
+  @include above ($tablet-width) {
+    @include font-size (21px, 1.5em, 400);
+    font-weight: 600;
+  }
+}

@@ -1,11 +1,3 @@
-.staff {
-  margin-bottom: 50px;
-
-  @include above ($tablet-width){
-    margin-bottom: 80px;
-  }
-}
-
 .staff__list {
   @include list-reset;
 }
@@ -24,7 +16,6 @@
   }
 
   @include above ($desktop-width) {
-    flex: 0 1 auto;
     width: 400px;
   }
 }

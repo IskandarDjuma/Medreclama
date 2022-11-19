@@ -1,0 +1,9 @@
+.mask-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  background-color: rgba(10,0,0,0.5);
+}

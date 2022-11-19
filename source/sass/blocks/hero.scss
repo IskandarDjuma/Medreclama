@@ -1,5 +1,10 @@
 .hero {
   margin-top: 80px;
+  margin-bottom: 80px;
+
+  @include above ($max-desktop-width) {
+    margin-bottom: 150px;
+  }
 }
 
 .hero__wrap {
@@ -8,15 +13,28 @@
     max-width: 100%;
   }
 
-  @include above ($tablet-width) {
+  @include above ($desktop-width) {
     display: flex;
-    gap: 20px;
+    gap: 35px;
   }
 }
 
 .hero__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
   @include above ($tablet-width) {
     flex: 1 1 auto;
+  }
+
+  @include above ($desktop-width) {
+    margin-bottom: 0;
+  }
+
+  @include above ($max-desktop-width) {
+    width: 55%;
+    flex: 2 0 auto;
   }
 }
 
@@ -26,11 +44,15 @@
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .hero__healdine {
   margin-bottom: 40px;
+
+  @include above ($max-desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .hero__title {
@@ -44,9 +66,10 @@
 }
 
 .hero__img-info {
-  @include above ($tablet-width) {
-    width: clamp(200px, 50%, 1000px);
-    flex: 1 0 auto;
+   @include above ($max-desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -57,6 +80,10 @@
   border-radius: 20px;
   border: 2px solid $basic-white;
   overflow: hidden;
+
+  @include above ($max-desktop-width) {
+    width: 100%;
+  }
 }
 
 .hero__img-title {
@@ -64,12 +91,12 @@
   font-size: 3vw;
   line-height: 5vw;
   letter-spacing: 0.1em;
-  font-weight: 600;
   background-color: $accent-color;
   color: $basic-white;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: column;
   padding: 30px 10px;
   margin: 0;
   text-transform: uppercase;
@@ -87,8 +114,8 @@
     border-radius: 20px;
   }
 
-  @include above ($tablet-width) {
-    font-size: clamp(1em, 1.6vw, 1.3em);
+  @include above ($desktop-width) {
+    font-size: clamp(1em, 2vw, 1.6em);
     line-height: 1.4em;
 
     span {
@@ -101,5 +128,11 @@
 .hero__img {
   display: flex;
   width: 100%;
+}
+
+.hero__date {
+  @include above ($max-desktop-width) {
+    display: none;
+  }
 }
 

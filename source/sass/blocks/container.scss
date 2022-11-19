@@ -9,8 +9,13 @@
   }
 
   @include above($desktop-width) {
-    min-width: 1024px;
-    max-width: 1200px;
+    min-width: 992px;
     padding: 0 60px;
+  }
+
+  @include above($max-desktop-width) {
+    max-width: 1440px;
+    min-width: 1200px;
+    padding: 0 80px;
   }
 }

@@ -1,5 +1,6 @@
 // Fonts
 $primary-text: "Commissioner", "Arial", sans-serif;
+$secondary-text: "Roboto Slab", "Arial", sans-serif;
 
 // Color
 $basic-blue: #0051d4;
@@ -16,9 +17,9 @@ $primary-text-color: $basic-black;
 
 // Viewports
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 992px;
 $mobile-width-only: 767px;
-
+$max-desktop-width: 1200px;
 
 //Retina
 

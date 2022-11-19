@@ -1,9 +1,9 @@
 .headline__h2 {
-  @include font-size (34px, 42px, 600);
+  @include font-size (30px, 42px, 600);
   margin: 0;
 
-  @include above($desktop-width) {
-    @include font-size (36px, 45px, 600);
+  @include above ($max-desktop-width) {
+    @include font-size (25px, 30px, 600);
   }
 }
 
@@ -13,6 +13,10 @@
 
   @include above($desktop-width) {
     @include font-size (27px, 33px, 600);
+  }
+
+  @include above($max-desktop-width) {
+    @include font-size (20px, 28px, 600);
   }
 }
 

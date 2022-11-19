@@ -1,0 +1,68 @@
+.travel__wrapp {
+  font-family: $secondary-text;
+  margin-bottom: 40px;
+
+  @include above ($tablet-width) {
+    width: 820px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+
+.travel__description {
+  @include font-size(16px, 1.5em, 400);
+
+  @include above ($tablet-width) {
+    @include font-size(21px, 1.5em, 400);
+  }
+}
+
+.travel__img {
+  position: relative;
+  background-color: rgba(10,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.travel__img-title {
+  @include font-size (100px, 1.5em, 600);
+  color: $basic-white;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+  @include above ($desktop-width) {
+    @include font-size (200px, 1.5em, 600);
+  }
+}
+
+.travel__headline {
+  @include font-size (30px, 1.5em, 600);
+  text-transform: uppercase;
+  text-align: center;
+
+  span {
+    display: block;
+    @include font-size (20px, 1.5em, 500);
+    text-transform: lowercase;
+  }
+
+  @include above ($tablet-width) {
+    @include font-size (50px, 1.5em, 600);
+
+    span {
+      @include font-size (18px, 1.5em, 500);
+    }
+  }
+}
