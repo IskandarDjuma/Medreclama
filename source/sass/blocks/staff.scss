@@ -3,25 +3,21 @@
 }
 
 .staff__item {
-  width: 100%;
-  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1 0 auto;
 
   img {
     max-width: 100%;
   }
-
-  @include above ($tablet-width) {
-    flex: 1 1 auto;
-  }
-
-  @include above ($desktop-width) {
-    width: 400px;
-  }
 }
 
 .staff__title {
-  margin-bottom: 40px;
+  @include font-size(16px, 1.5em, 500);
+  margin: 0;
+  margin-bottom: 17px;
+
 }
 
 .staff__figure {
@@ -29,8 +25,12 @@
 
   figcaption {
     text-align: center;
-    padding: 10px 0;
   }
+}
+
+.staff__headline {
+  @include font-size (12px, 1.5em, 400);
+  margin: 0 auto;
 }
 
 .staff__img-wrap {
@@ -40,8 +40,12 @@
   border-radius: 20px;
   height: 14.5rem;
   width: 100%;
-  margin: 0 0 1.5rem;
+  margin: 0 0 18px;
   background-color: $basic-grey;
+
+  @include above ($desktop-width) {
+    height: 110px;
+  }
 }
 
 .staff__img {

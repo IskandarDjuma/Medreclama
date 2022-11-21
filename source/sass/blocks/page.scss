@@ -19,13 +19,9 @@
 
 .page__wrapper {
   @include above ($desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  @include above ($max-desktop-width) {
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 500px));
+    gap: 20px;
   }
 }
 

@@ -1,7 +1,29 @@
 .price-list__info {
   margin-bottom: 70px;
 
-  h3 {
-    margin-bottom: 25px;
+  @include above ($desktop-width) {
+    margin-bottom: 20px;
   }
+}
+
+.price-list__info-title {
+  margin-bottom: 25px;
+}
+
+.price__list-content {
+  background-color: $accent-color;
+  padding: 16px;
+  border-radius: 10px;
+
+  p {
+    @include font-size (13px, 1.5em, 400);
+    color: $basic-white;
+    padding-left: 40px;
+  }
+}
+
+.price-list__info-headline {
+  @include font-size(16px, 1.5em, 500);
+  margin: 0;
+  margin-bottom: 16px;
 }

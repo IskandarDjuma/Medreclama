@@ -49,8 +49,8 @@
 .form__input:focus + label,
 .form__input:valid + label,
 .form__input:invalid:not(:placeholder-shown) + label {
-  top: 30%;
-  font-size: 0.8rem;
+  top: 20%;
+  font-size: .5rem;
   color: $accent-color;
 }
 

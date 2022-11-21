@@ -1,4 +1,18 @@
 .privilege__list {
   @include list-reset;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+
+  li {
+    padding-left: 40px;
+  }
+}
+
+.privilege__headline {
+  @include font-size (16px, 1.5em, 500);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.privilege__text {
+  @include font-size (13px, 1.5em, 400);
 }

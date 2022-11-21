@@ -177,7 +177,6 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
-  optimizeImages,
   gulp.series (
     styles,
     html,

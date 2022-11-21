@@ -62,6 +62,8 @@ const phoneInputs = document.querySelectorAll('input[data-tel-input]');
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 20,
 
     navigation: {
       nextEl: '.swiper-button-next',
@@ -69,14 +71,14 @@ const phoneInputs = document.querySelectorAll('input[data-tel-input]');
     },
 
     breakpoints: {
-      650: {
-        slidesPerView: 2,
+      768: {
+        slidesPerView: 4,
         spaceBetween: 20
       },
 
       992: {
-        slidesPerView: 4,
-        spaceBetween: 20
+        slidesPerView: 2,
+        spaceBetween: 30
       },
     }
   });
